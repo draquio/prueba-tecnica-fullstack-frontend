@@ -1,0 +1,33 @@
+@import "../../sass/Index.scss";
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  &_left {
+    margin-top: 20px;
+    p {
+      font-size: 20px;
+      font-style: italic;
+    }
+  }
+  &_rigth {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $dark_color;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media (max-width:600px){
+  .menu .menu_rigth{
+    flex-direction: column;
+    align-items: end;
+  }
+}

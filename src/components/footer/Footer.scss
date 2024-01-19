@@ -1,0 +1,13 @@
+@import "../../sass/Index.scss";
+.footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark_color;
+    margin-top: auto;
+    a{
+        text-decoration: none;
+        color:$text_light;
+    }
+}

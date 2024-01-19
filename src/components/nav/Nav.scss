@@ -1,0 +1,26 @@
+@import "../../sass/Index.scss";
+.nav {
+  background-color: $dark_color;
+  color: $text_light;
+  width: 100%;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: $max-width;
+    margin: auto;
+    padding: 15px 20px;
+    align-items: center;
+    .logo a {
+      font-weight: bold;
+      font-size: 50px;
+      text-decoration: none;
+      color: $text_light;
+    }
+    button {
+      font-weight: bold;
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}

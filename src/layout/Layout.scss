@@ -1,0 +1,15 @@
+@import "../sass/Index.scss";
+.container{
+    width: 100%;
+    background-color: $bg;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .content{
+        width: 100%;
+        max-width: $max-width;
+        margin: auto;
+        padding: 0 20px;
+        min-height: 83dvh;
+    }
+}
