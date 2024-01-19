@@ -1,5 +1,5 @@
-// const SERVER_IP = "localhost:3977";
-const SERVER_IP = "prueba-tecnica-fullstack-backend-birygcn7m-draquio.vercel.app";
+
+const SERVER_IP = "fullstack-backend-prueba.onrender.com";
 
 export const ENV = {
   BASE_PATH: `https://${SERVER_IP}`,
