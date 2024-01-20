@@ -63,3 +63,36 @@ margin: auto;
     flex-direction: column;
   }
 }
+
+.loaderlogin {
+  border: 4px solid white;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.loaderlogin {
+  border: 4px solid white;
+  border-left-color: transparent;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.loaderlogin {
+  border: 4px solid white;
+  border-left-color: transparent;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

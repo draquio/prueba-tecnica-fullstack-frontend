@@ -10,11 +10,14 @@ export const LoginComponent = () => {
   const [email, setEmail] = useState("admin@admin.com");
   const [password, setPassword] = useState("123");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const { login } = useAuth();
   const loginForm = async (e) => {
     e.preventDefault();
+    setLoading(true)
     if (!email.trim() || !password.trim()) {
       setMessage("Correo y contraseña son obligatorios");
+      setLoading(false)
       return;
     } else {
       setMessage("");
@@ -31,6 +34,7 @@ export const LoginComponent = () => {
       } catch (error) {
         setMessage(error.msg);
       }
+      setLoading(false)
     }
   };
   const handleEmailChange = (e) => {
@@ -67,7 +71,8 @@ export const LoginComponent = () => {
           />
         </div>
         <button className="btn btn_delete" onClick={loginForm}>
-          Login
+          {loading  ? <div className="loaderlogin"></div> : "Login" }
+          
         </button>
         {message ? (
           <Alert message={message} type={"error"} close={setMessage} />
