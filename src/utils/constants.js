@@ -1,5 +1,6 @@
 
-const SERVER_IP = "fullstack-backend-prueba.onrender.com";
+// const SERVER_IP = "fullstack-backend-prueba.onrender.com";
+const SERVER_IP = import.meta.env.VITE_URL_BACKEND;
 
 export const ENV = {
   BASE_PATH: `https://${SERVER_IP}`,
